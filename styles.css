@@ -1,0 +1,64 @@
+/* Oinarrizko estiloak */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d87f0;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Botoia estiloa */
+.download-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2d87f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #1e6db6;
+}
+
+/* Grafikoen estiloak */
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    margin-bottom: 40px;
+}
+
+/* Responsive diseinua */
+@media (max-width: 768px) {
+    canvas {
+        height: 768px !important;
+    }
+}

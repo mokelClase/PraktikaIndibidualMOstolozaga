@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klima Txostena</title>
+    
+    <!-- Chart.js liburutegia kargatu -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+
+    <!-- jsPDF liburutegia kargatu (PDF sortzeko) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Gure script-a kargatu -->
+    <script defer src="script.js"></script>
+
+    <!-- Estiloak kargatu -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Titulo nagusia -->
+        <h1>Klima Txostena</h1>
+        
+        <!-- PDF-a deskargatzeko botoia -->
+        <button id="downloadPdf" class="download-button">PDF-a jaitsi</button>
+
+        <!-- Klima baldintzak adierazteko grafikoa (barra grafikoa) -->
+        <h2>Klima Baldintzak</h2>
+        <canvas id="barChart"></canvas>
+
+        <!-- Tenperatura minimo eta maximoa adierazteko grafikoa (lineako grafikoa) -->
+        <h2>Tenperatura Minimo eta Maximoa</h2>
+        <canvas id="lineChart"></canvas>
+
+        <!-- Hezetasun erlatiboa adierazteko grafikoa (pie chart) -->
+        <h2>Hezetasun Erlatiboa</h2>
+        <canvas id="pieChart"></canvas>
+    </div>
+</body>
+</html>
